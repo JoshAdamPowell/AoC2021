@@ -3,7 +3,7 @@ import Day from "./Day";
 
 export default class DayTwo implements Day{
     getPartOne = (): number => {
-        const data = FileReader.getStringData("dayTwo");
+        const data = FileReader.getStringData("2");
         let depth = 0;
         let hor = 0;
         data.forEach(instruction => {
@@ -25,7 +25,7 @@ export default class DayTwo implements Day{
     }
 
     getPartTwo = (): number => {
-        const data = FileReader.getStringData("dayTwo");
+        const data = FileReader.getStringData("2");
         let depth = 0;
         let hor = 0;
         let aim = 0;

@@ -3,7 +3,7 @@ import Day from "./Day";
 
 export default class DayOne implements Day{
     getPartOne = (): number => {
-        const data = FileReader.getNumericData("dayOne");
+        const data = FileReader.getNumericData("1");
         const increases = data.reduce((acc, cur, ind, arr) => {
             if (!arr[ind + 1]) {
                 return acc;
@@ -18,7 +18,7 @@ export default class DayOne implements Day{
 
     getPartTwo = (): number => {
 
-        const data = FileReader.getNumericData("dayOne");
+        const data = FileReader.getNumericData("1");
         const increases = data.reduce((acc, cur, ind, arr) => {
             if (!arr[ind + 3]){
                 return acc;

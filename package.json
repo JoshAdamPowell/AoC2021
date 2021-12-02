@@ -11,12 +11,14 @@
   },
   "scripts": {
     "start": "tsc && node build/index.js",
-    "setup": "node setup/setup.js"
+    "setup": "node setup/setup.js",
+    "test": "ts-node src/index.ts"
   },
   "dependencies": {
+    "commonjs": "^0.0.1",
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
+    "fuse-box": "^4.0.1-next.8",
     "node-fetch": "^3.1.0"
-  },
-  "type": "module"
+  }
 }

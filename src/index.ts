@@ -2,7 +2,7 @@ import dotenv from 'dotenv'
 import DayFactory from "./DayFactory";
 dotenv.config()
 
-const currentDay = DayFactory(process.env.DAY!)
+    const currentDay = DayFactory(process.env.DAY!)
 
 try {
     const partOne = currentDay.getPartOne();
@@ -21,3 +21,4 @@ try {
 }
 
 console.log("complete");
+
