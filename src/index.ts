@@ -1,7 +1,8 @@
-import DayOne from './2021/DayOne';
-import DayTwo from './2021/DayTwo';
+import dotenv from 'dotenv'
+import DayFactory from "./DayFactory";
+dotenv.config()
 
-const currentDay = new DayTwo();
+const currentDay = DayFactory(process.env.DAY!)
 
 try {
     const partOne = currentDay.getPartOne();
