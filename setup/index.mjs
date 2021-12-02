@@ -42,5 +42,3 @@ const updateDayFactory = async() => {
 fetchData();
 copyDayTemplate()
 updateDayFactory()
-
-exports.fetchData = fetchData;
