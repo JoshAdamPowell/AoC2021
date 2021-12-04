@@ -18,7 +18,6 @@ try {
     console.log(partTwo);
 } catch(e) {
     console.log(`Error with part two: ${e}`)
-    throw e;
 }
 
 console.log("complete");
