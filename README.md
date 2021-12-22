@@ -18,6 +18,14 @@ To run this setup, `DAY=1 yarn setup`, replacing the day with which one you want
 
 # Nomenclature
 
-Certain file names are expected and should now be changed. 
+Certain file names are expected and should not be changed. 
 Day solutions should always look like `Day1.ts`
 Data files should always look like `1.txt`
+
+# Memory
+
+Is your solution lazy and needs to use up lots of memory and you're too stupid to come up with a better solution?
+
+`DAY=1 node --max_old_space_size=8192 -r ts-node/register ./src/index.ts`
+
+will let you decide how much memory node is allowed to use.
